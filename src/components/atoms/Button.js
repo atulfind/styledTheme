@@ -2,14 +2,12 @@ import React from 'react'
 import styled from 'styled-components';
 
 const StyledButtonn = styled.button`
-  color: ${props => props.theme.fg};
-  border: 2px solid ${props => props.theme.fg};
-  background: ${props => props.theme.bg};
-  font-size: 1em;
-  margin: 1em;
-  padding: 0.25em 1em;
-  border-radius: 3px;
-  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 16px;
+  background: transparent;
+  color: ${props => props.theme.palette.color.default};
+  border: 1px solid #C778DD;
 `;
 
 const Button = ({children, ...rest}) => {
